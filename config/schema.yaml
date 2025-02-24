@@ -1,0 +1,40 @@
+columns:
+  - PassengerId: int
+  - Survived: int
+  - Pclass: int
+  - Name: category
+  - Sex: category
+  - Age: float
+  - Ticket: category
+  - Fare: float
+  - Embarked: category
+  - Family Persion: int
+  - Family_Type: category
+  
+
+
+numerical_columns:
+  - Survived
+  - Pclass
+  - Age
+  - Fare
+  - Family Persion
+  
+
+categorical_columns:
+  - Sex
+  - Name
+  - Embarked
+
+drop_id: PassengerId
+drop_ticket: Ticket
+drop_type: Family_Type
+
+# for data transformation
+num_features:
+  - Age
+  - Fare
+
+
+# mm_columns:
+#   - Annual_Premium
